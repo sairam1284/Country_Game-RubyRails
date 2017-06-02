@@ -1,0 +1,8 @@
+<h1> List of Continents </h1>
+<ul>
+
+  <% @conts.each do |continent| %>
+  <li> <%= link_to continent.cont, continent %> </li>
+  <%#binding.pry%>
+  <% end %>
+</ul>

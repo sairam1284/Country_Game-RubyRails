@@ -1,0 +1,8 @@
+<h1><%= @continent.cont %></h1>
+
+<h1> List of Countries </h1>
+<ul>
+  <% @countries.each do |country| %>
+  <li> <%= country.country %></li>
+  <% end %>
+</ul>
