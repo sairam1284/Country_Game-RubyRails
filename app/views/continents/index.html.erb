@@ -1,8 +1,10 @@
+<div class="container">
 <h1> List of Continents </h1>
-<ul>
+<ul class="nationlist">
 
   <% @conts.each do |continent| %>
   <li> <%= link_to continent.cont, continent %> </li>
   <%#binding.pry%>
   <% end %>
 </ul>
+</div>

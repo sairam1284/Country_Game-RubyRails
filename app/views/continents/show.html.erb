@@ -1,8 +1,18 @@
-<h1><%= @continent.cont %></h1>
+<div class="container">
+  <input type='text' id='nation' />
+  <input type='button' value='add to list' id='add' />
+  <%#binding.pry%>
+  <h3> Number of Countries: </h3>
+  <span class = "natcount"></span><%= @country_count %>
 
-<h1> List of Countries </h1>
-<ul>
-  <% @countries.each do |country| %>
-  <li> <%= country.country %></li>
-  <% end %>
-</ul>
+  <h3> Give up?!?! <input type='button' value='Show All Nations' id='nationshow' /></h3>
+
+  <h1> List of Countries in <%= @continent.cont %></h1>
+
+  <ul class="nationlist">
+    <% @country_array.each do |c| %>
+    <% cnew = c.downcase.tr(' ', '_')%>
+    <li ><span class="hidden" id='<%=cnew%>'> <%=c%></span> </li>
+    <% end %>
+  </ul>
+</div>
