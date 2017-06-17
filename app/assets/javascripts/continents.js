@@ -7,6 +7,7 @@ $(document).ready(function() {
          example=example.replace(/ /g,"_");
          console.log("The value of x is", example);
          $("#"+example).removeClass('hidden');
+         $("#"+example).addClass('nationcorrect');
          $('#nation').val("");
    }
 
@@ -14,6 +15,7 @@ $(document).ready(function() {
    $('.natcount').text(num+"/");
  });
  $('#nationshow').click(function () {
-    $("."+"hidden").removeClass('hidden');
+    $("."+"hidden").removeClass('hidden').addClass('nationwrong');
   });
+
 });

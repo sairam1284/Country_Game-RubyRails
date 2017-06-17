@@ -1,8 +1,10 @@
 <div class="container">
+  <!-- <input type='button' value='Start Timer' id='timer' /> -->
+  <!-- <div id="counter"> 8:00</div>
+  <div class="countdown"></div> -->
+  <h2> Enter your guess here! </h2>
   <input type='text' id='nation' />
-  <input type='button' value='add to list' id='add' />
-  <%#binding.pry%>
-  <h3> Number of Countries: </h3>
+  <h3> Countries Remaining/Total </h3>
   <span class = "natcount"></span><%= @country_count %>
 
   <h3> Give up?!?! <input type='button' value='Show All Nations' id='nationshow' /></h3>
@@ -12,7 +14,7 @@
   <ul class="nationlist">
     <% @country_array.each do |c| %>
     <% cnew = c.downcase.tr(' ', '_')%>
-    <li ><span class="hidden" id='<%=cnew%>'> <%=c%></span> </li>
+    <li class="natborder"><span class="hidden" id='<%=cnew%>'> <%=c%></span> </li>
     <% end %>
   </ul>
 </div>

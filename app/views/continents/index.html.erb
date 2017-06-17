@@ -1,10 +1,13 @@
 <div class="container">
-<h1> List of Continents </h1>
-<ul class="nationlist">
+  <h1> Welcome to the geography game </h1>
+  <h3> Instructions: </h3>
+  <p> Once you click on a continent, you will have an unlimited amount of time to guess which countries you think are in that continent.  If you guess correctly, you will see the name of that country appear in the empty table.  If you give up and have had enough :(, you can click the "Show All Nations" button and the remaining countries will appear. </p>
+  <h2> List of Continents </h2>
+  <ul>
 
-  <% @conts.each do |continent| %>
-  <li> <%= link_to continent.cont, continent %> </li>
-  <%#binding.pry%>
-  <% end %>
-</ul>
+    <% @conts.each do |continent| %>
+    <li> <%= link_to continent.cont, continent %> </li>
+    <%#binding.pry%>
+    <% end %>
+  </ul>
 </div>
