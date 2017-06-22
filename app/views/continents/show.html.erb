@@ -4,9 +4,9 @@
   <div class="countdown"></div> -->
   <h2> Enter your guess here! </h2>
   <input type='text' id='nation' />
-  <h3> Countries Remaining/Total </h3>
-  <span class = "natcount"></span><%= @country_count %>
+  <h3> Countries Remaining/Total: <span class = "natcount"> </span> <%= @country_count %></h3>
 
+  <h3> Percentage Remaining: <span class = "natpercent"></span></h3>
   <h3> Give up?!?! <input type='button' value='Show All Nations' id='nationshow' /></h3>
 
   <h1> List of Countries in <%= @continent.cont %></h1>

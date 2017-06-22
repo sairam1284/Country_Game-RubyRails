@@ -12,7 +12,10 @@ $(document).ready(function() {
    }
 
    var num = $('.hidden').length;
-   $('.natcount').text(num+"/");
+   var total = $('.natborder').length;
+   $('.natcount').text(num+" /");
+   percentage = num*100/total
+   $('.natpercent').text(percentage.toFixed(0) + "%");
  });
  $('#nationshow').click(function () {
     $("."+"hidden").removeClass('hidden').addClass('nationwrong');
