@@ -14,8 +14,13 @@ $(document).ready(function() {
    var num = $('.hidden').length;
    var total = $('.natborder').length;
    $('.natcount').text(num+" /");
-   percentage = num*100/total
+   percentage = num*100/total;
    $('.natpercent').text(percentage.toFixed(0) + "%");
+   if(percentage < 80){
+     $('h2').remove('#badstatusmessage');
+     $('#goodstatusmessage').text("Getting Close!!");
+   }
+
  });
  $('#nationshow').click(function () {
     $("."+"hidden").removeClass('hidden').addClass('nationwrong');

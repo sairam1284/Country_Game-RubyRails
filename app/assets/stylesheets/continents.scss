@@ -24,7 +24,20 @@ li.natborder {
 
 body {
   padding: 30px;
+  background-color: lightblue;
 }
 .contshow{
-  font-size: 1.7rem;
+  font-size: 1.4rem;
+}
+
+.entry {
+  float: right;
+  padding-right: 30%;
+}
+
+#goodstatusmessage {
+  color: green;
+}
+#badstatusmessage {
+  color:red;
 }
