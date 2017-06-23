@@ -20,6 +20,10 @@ $(document).ready(function() {
      $('h2').remove('#badstatusmessage');
      $('#goodstatusmessage').text("Getting Close!!");
    }
+   if(percentage == 0){
+     $('h2').remove('#goodstatusmessage');
+     $('#finishedmessage').text("Awesome!! You got them all!!!");
+   }
 
  });
  $('#nationshow').click(function () {
