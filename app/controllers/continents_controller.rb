@@ -1,6 +1,6 @@
 class ContinentsController < ApplicationController
   def index
-    @conts = Continent.all
+    @conts = Continent.where.not(cont: " All")
   end
 
   def show

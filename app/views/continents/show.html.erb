@@ -13,6 +13,7 @@
   <h2 id="goodstatusmessage"></h2>
   <h2 id="finishedmessage"></h2>
   <h2 id="badstatusmessage"> Not even close! Keep trying!</h2>
+
   <h1> List of Countries in <%= @continent.cont %></h1>
 
   <ul class="nationlist">
@@ -21,4 +22,6 @@
     <li class="natborder"><span class="hidden" id='<%=cnew%>'> <%=c%></span> </li>
     <% end %>
   </ul>
+  <%=link_to "Back", continents_path%>
+  
 </div>
