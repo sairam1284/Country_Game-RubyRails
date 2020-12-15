@@ -1,24 +1,8 @@
-# README
+# How Many Countries do You Know?
+---
+### About
+For this Ruby on Rails App, I built a simple game where the userm must try and guess every country in a given continent.  There is no time limit but a status bar which tells you how close you are to the end.  ***Not as easy as you think!!***
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Country Game App!](https://pure-cove-75587.herokuapp.com/)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![](/Country_Game_Screenshot.png)
